@@ -1,0 +1,23 @@
+{
+  "name": "internshipApplicationMattSmith",
+  "version": "1.0.0",
+  "description": "Test Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewHightech/internship-application-MattSmith.git"
+  },
+  "author": "Matt Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewHightech/internship-application-MattSmith/issues"
+  },
+  "homepage": "https://github.com/MatthewHightech/internship-application-MattSmith#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
