@@ -1,1 +1,117 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Smith</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="res/favicon.PNG"/>
+    <!--Ionic Packages-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <script src="js/app.js" defer></script>
+</head>
+    <body>
+        <!-- Visible Content -->
+        <ion-app>
+            <ion-content>
+                <ion-toolbar>
+                    <ion-button slot="end" href="https://mattsmith.herokuapp.com/" target="_blank">
+                        Portfolio
+                        <ion-icon name="folder-open-outline" size="large" slot="start"></ion-icon>
+                    </ion-button>
+                    <ion-button slot="end" href="res/MattSmithResume.pdf" download>
+                        Resume
+                        <ion-icon name="document-text-outline" size="large" slot="start"></ion-icon>
+                    </ion-button>
+                    <ion-button slot="end" href="https://www.linkedin.com/in/matthew-smith-softdev/" target="_blank">
+                        <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                    </ion-button>
+                    <ion-button slot="end" href="https://github.com/MatthewHightech" target="_blank">
+                        <ion-icon name="logo-github" size="large"></ion-icon>
+                    </ion-button>
+        
+                </ion-toolbar>
+                <ion-grid>
+                    
+                    <!-- Absolute Row for Image-->
+                    <ion-row class="img-row">
+                        <ion-col size="12">
+                            <ion-img src="res/banner2.jpg" alt=""></ion-img>
+                        </ion-col>
+                    </ion-row>
+                    <!-- Absolute gradient overlay-->
+                    <ion-row>
+                        <ion-col size="12" class="gradient-overlay">
+                        </ion-col>
+                    </ion-row>
+                    <!-- Relative Rows for content-->
+                    
+                     
+                    <ion-row>
+                        <ion-col class="title">
+                            <ion-title id="desktop-title">Matthew Smith</ion-title>
+                           <!-- <ion-title id="mobile-title" class="hidden-xs">Matthew<br>Smith</ion-title>-->
+                            <hr>
+                            <ion-text>Matthew is a <strong>self-motivated, team-oriented, and dependable</strong> student software developer enthusiastic about gaining<br>
+                                experience. He's been developing for over 5 years and is focused on collaboration and efficient workflow.<br> Inspired
+                                by technology’s elegant solutions, Matt's passion for helping others motivates everything he does. 
+                                </ion-text>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="4" class="questions">
+                            <ion-title>Question: </ion-title>
+                            <ion-list>
+                                <ion-item onClick="question(1, this)">
+                                    <ion-label>Why do you want to work for HighTechU?</ion-label>
+                                    <ion-icon name="arrow-forward-circle-outline" class="items"></ion-icon>
+                                </ion-item>
+                                <ion-item onClick="question(2, this)">
+                                    <ion-label>How many hours a week are you available<br> to work between November 30, 2020 and<br> February 28, 2021?</ion-label>
+                                    <ion-icon name="arrow-forward-circle-outline" class="items"></ion-icon>
+                                </ion-item>
+                                <ion-item onClick="question(3, this)">
+                                    <ion-label>What do you hope to get out of the<br> internship?</ion-label>
+                                    <ion-icon name="arrow-forward-circle-outline" class="items"></ion-icon>
+                                </ion-item>
+                                <ion-item onClick="question(4, this)">
+                                    <ion-label>What do you expect to be your biggest<br> challenge during the internship?</ion-label>
+                                    <ion-icon name="arrow-forward-circle-outline" class="items"></ion-icon>
+                                </ion-item>
+                                <ion-item onClick="question(5, this)">
+                                    <ion-label>If you aren't successful with your application,<br> what steps will you take to help ensure you<br> are successful in the future?</ion-label>
+                                    <ion-icon name="arrow-forward-circle-outline" class="items"></ion-icon>
+                                </ion-item>
+                                <ion-item onClick="question(6, this)">
+                                    <ion-label>What is your favourite thing about programming?</ion-label>
+                                    <ion-icon name="arrow-forward-circle-outline" class="items"></ion-icon>
+                                </ion-item>
+                            </ion-list>
+                        </ion-col>
+                        <ion-col size="8" class="questions">
+                            <ion-title>Answer:</ion-title>
+                            <div class="text-wrapper">
+                                <ion-text id="text"></ion-text>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="12" class="video">
+                            <ion-item>
+                                <ion-title>What I can bring to the HighTechU Team</ion-title>
+                            </ion-item>
+                            <!-- Video -->
+                            <br><br><br><br>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-content>
+        </ion-app>
+    </body>
+</html>

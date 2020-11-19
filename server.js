@@ -1,7 +1,8 @@
 const http = require('http'); 
 const path = require('path'); 
 const fs = require('fs'); 
-
+var express = require("express");
+/*
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
         fs.readFile(path.join(__dirname, 'public' , 'index.html'),
@@ -12,8 +13,14 @@ const server = http.createServer((req, res) => {
         })
     }
 });
+*/
+const app = express(); 
+
+//adding static functionality for images
+app.use(express.static('public'));
+app.use(express.static('public/res'));
 
 const PORT = process.env.PORT || 5000;
 
-server.listen(PORT); 
+app.listen(PORT); 
 
