@@ -2,7 +2,7 @@
 
 ## Find my internship application here 📝: <https://matt-smith-intern-application.herokuapp.com/>
 
-#### While my 30 second application video can be accessed through the website, you can also view the video directly here 🎞️: 
+#### While my 30-second application video can be accessed through the website, you can also view the video directly here 🎞️: 
 
 #### My software portfolio is linked at the top of my website application, but a back-up link can be found here 📁: <https://mattsmith.herokuapp.com/> 
 
