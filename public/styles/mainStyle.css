@@ -2,7 +2,6 @@
 
 ion-grid {
     padding: 0px; 
-    
 }
 
 ion-col {
@@ -130,16 +129,50 @@ ion-item:hover {
 
 /* YouTube Embedded Video */
 .video {
-    background: #222428;
-}
-
-.video ion-item {
+    background: var(--ion-color-light);
     text-align: center;
-    border: none; 
 }
 
 .video ion-title {
     font-size: 30px;
-
+    color: #222428; 
+    padding: 20px; 
 }
+
+iframe {
+    width: 60%; 
+    margin-bottom: 20px; 
+    z-index: 5;
+    border: 15px #222428 solid; 
+    border-radius: 8px;
+    background: #222428;
+}
+
+.box {
+    background: #222428;
+    width: 150px; 
+    height: 150px; 
+    position: absolute; 
+    z-index: -1;
+    border-radius: 8px;
+}
+
+#box1 {
+    top: 60px;
+    left: 13%; 
+}
+
+#box2 {
+    top: 350px;
+    right: 13%; 
+}
+
+/* Footer */
+
+.footer {
+    background: #222428;
+    text-align: center;
+}
+
+
 

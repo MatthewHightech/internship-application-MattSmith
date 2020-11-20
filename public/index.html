@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/mainStyle.css">
     <script src="js/app.js" defer></script>
 </head>
-    <body>
+    <body onload="question(null, null)">
         <!-- Visible Content -->
         <ion-app>
             <ion-content>
@@ -68,7 +68,7 @@
                         <ion-col size="4" class="questions">
                             <ion-title>Question: </ion-title>
                             <ion-list>
-                                <ion-item onClick="question(1, this)">
+                                <ion-item onClick="question(1, this)" id="item1">
                                     <ion-label>Why do you want to work for HighTechU?</ion-label>
                                     <ion-icon name="arrow-forward-circle-outline" class="items"></ion-icon>
                                 </ion-item>
@@ -103,11 +103,17 @@
                     </ion-row>
                     <ion-row>
                         <ion-col size="12" class="video">
-                            <ion-item>
                                 <ion-title>What I can bring to the HighTechU Team</ion-title>
-                            </ion-item>
-                            <!-- Video -->
-                            <br><br><br><br>
+                            <div>
+                                <div id="box1" class="box"></div>
+                                <div id="box2" class="box"></div>
+                                <iframe height="500px" src="https://www.youtube.com/embed/iWCOHzsYEjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>               
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="12" class="footer">
+                            <br><ion-label>Built by Matt Smith &copy;2020</ion-label><br><br>
                         </ion-col>
                     </ion-row>
                 </ion-grid>
